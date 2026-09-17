@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akal Intelligence menyediakan solusi Artificial Intelligence terdepan seperti Asisten Virtual, Computer Vision, dan Analitik Prediktif untuk bisnis Anda.">
+    <meta name="author" content="Ian Kurniawan Siahaan">
     <title>Akal Intelligence - Solusi Artificial Intelligence</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Ikon di Tab Browser -->
     <link rel="icon" type="image/png" href="ikon tab.png">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navigasi Utama">
         <a href="index.html" class="brand">
-            <img src="ikon navbar.png" alt="logo Akal Intelligence" class="nav-logo">Akal Intelligence</a>
+            <img src="ikon navbar.png" alt="Logo Akal Intelligence" class="nav-logo" width="35" height="35" loading="lazy">
+            Akal Intelligence
+        </a>
         <ul class="nav-links">
             <li><a href="index.html" class="active">Beranda</a></li>
             <li><a href="#layanan">Layanan</a></li>
@@ -24,11 +29,11 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <header class="hero">
             <h1>Masa Depan Bisnis Ada di Tangan AI</h1>
             <p>Tingkatkan efisiensi, kurangi biaya, dan ciptakan inovasi dengan solusi Artificial Intelligence terdepan dari Akal Intelligence.</p>
             <a href="#kontak" class="btn-primary">Mulai Konsultasi</a>
-        </section>
+        </header>
 
         <!-- Layanan -->
         <section id="layanan" class="section-padding text-center">
@@ -36,18 +41,18 @@
             <p class="section-subtitle">Solusi cerdas yang disesuaikan untuk skala enterprise maupun startup.</p>
             
             <div class="grid-layanan">
-                <div class="card">
+                <article class="card">
                     <h3 style="color: var(--primary);">🤖 Asisten Virtual Cerdas</h3>
                     <p>Integrasi LLM tingkat lanjut untuk layanan pelanggan otomatis yang responsif, akurat, dan natural 24/7.</p>
-                </div>
-                <div class="card">
+                </article>
+                <article class="card">
                     <h3 style="color: var(--primary);">👁️ Computer Vision</h3>
                     <p>Deteksi anomali, pengenalan wajah, hingga inspeksi kualitas produk industri secara real-time berbasis visual.</p>
-                </div>
-                <div class="card">
+                </article>
+                <article class="card">
                     <h3 style="color: var(--primary);">📊 Analitik Prediktif</h3>
                     <p>Ubah data mentah perusahaan Anda menjadi wawasan masa depan untuk pengambilan keputusan bisnis yang strategis.</p>
-                </div>
+                </article>
             </div>
         </section>
 
@@ -67,9 +72,14 @@
             <div class="kontak-wrapper">
                 <form action="#">
                     <div class="form-group">
-                        <input type="text" placeholder="Nama Lengkap" required>
-                        <input type="email" placeholder="Email Perusahaan" required>
-                        <textarea rows="4" placeholder="Ceritakan tantangan bisnis yang ingin diselesaikan..." required></textarea>
+                        <label for="nama" class="visually-hidden" style="display:none;">Nama Lengkap</label>
+                        <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                        
+                        <label for="email" class="visually-hidden" style="display:none;">Email Perusahaan</label>
+                        <input type="email" id="email" placeholder="Email Perusahaan" required>
+                        
+                        <label for="pesan" class="visually-hidden" style="display:none;">Pesan</label>
+                        <textarea id="pesan" rows="4" placeholder="Ceritakan tantangan bisnis yang ingin diselesaikan..." required></textarea>
                     </div>
                     <button type="submit" class="btn-primary" style="width: 100%;">Kirim Pesan</button>
                 </form>
@@ -77,8 +87,9 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Akal Intelligence. All rights reserved.</p>
+    <!-- Footer dengan teks kontras tinggi (text-light) -->
+    <footer class="bg-dark text-light text-center py-4" style="background-color: #0f172a; color: #f8fafc; padding: 2rem;">
+        <p class="mb-0">&copy; 2026 Akal Intelligence. All rights reserved.</p>
     </footer>
 
 </body>

@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum Vitae Ian Kurniawan Siahaan - Front-End Developer di Akal Intelligence.">
+    <meta name="author" content="Ian Kurniawan Siahaan">
     <title>CV - Ian Kurniawan Siahaan (Akal Intelligence)</title>
-    <!-- Favicon untuk tab browser -->
+    
+    <!-- Ikon di Tab Browser -->
     <link rel="icon" type="image/png" href="ikon tab.png">
     
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,11 +23,11 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
 
-    <nav class="bg-white shadow-sm py-4 sticky top-0 z-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm py-4 sticky top-0 z-50" aria-label="Navigasi Utama">
         <div class="max-w-6xl mx-auto flex justify-between items-center px-6">
-            <!-- Brand Navbar dengan Logo -->
             <a href="index.html" class="text-2xl font-bold text-brand flex items-center gap-3">
-                <img src="ikon navbar.png" alt="Logo" class="w-9 h-9 rounded-lg object-cover shadow-sm">
+                <img src="ikon navbar.png" alt="Logo Akal Intelligence" class="w-9 h-9 rounded-lg object-cover shadow-sm" width="36" height="36" loading="lazy">
                 Akal Intelligence
             </a>
             
@@ -37,12 +40,14 @@
         </div>
     </nav>
 
+    <!-- Konten Utama CV -->
     <main class="max-w-5xl mx-auto my-10 px-6 flex-grow">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             
+            <!-- Kolom Kiri -->
             <aside class="md:col-span-1 space-y-6">
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
-                    <img src="formal1.png" alt="Foto Profil" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-slate-50 shadow-md">
+                    <img src="formal1.png" alt="Foto Profil Ian Kurniawan" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-slate-50 shadow-md" width="128" height="128" loading="lazy">
                     <h1 class="text-2xl font-bold text-slate-900">Ian Kurniawan Siahaan</h1>
                     <p class="text-brand font-semibold text-sm mb-6 bg-blue-50 py-1 px-3 rounded-full inline-block mt-2">Front-End Developer</p>
                     
@@ -72,6 +77,7 @@
                 </div>
             </aside>
 
+            <!-- Kolom Kanan -->
             <section class="md:col-span-2 space-y-6">
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="text-2xl font-bold text-slate-900 mb-4">Profil Profesional</h2>
@@ -128,8 +134,9 @@
         </div>
     </main>
 
-    <footer class="bg-slate-900 text-center py-6 mt-10">
-        <p class="text-slate-400 text-sm">&copy; 2026 Akal Intelligence. All rights reserved.</p>
+    <!-- Footer dengan kontras warna yang aman -->
+    <footer class="bg-slate-900 text-slate-300 text-center py-6 mt-10">
+        <p class="text-sm">&copy; 2026 Akal Intelligence. All rights reserved.</p>
     </footer>
 
 </body>
