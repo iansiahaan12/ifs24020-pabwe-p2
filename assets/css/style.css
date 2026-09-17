@@ -25,8 +25,12 @@ a { text-decoration: none; color: inherit; transition: color 0.3s; }
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   position: sticky; top: 0; z-index: 1000;
 }
-.brand { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
-.nav-links { list-style: none; display: flex; gap: 2rem; }
+.brand { 
+  display: flex; align-items: center; gap: 0.75rem; /* Tambahan untuk mensejajarkan logo dan teks */
+  font-size: 1.5rem; font-weight: 700; color: var(--primary); 
+}
+.nav-logo { width: 35px; height: 35px; border-radius: 8px; object-fit: cover; } /* Styling logo */
+.nav-links { list-style: none; display: flex; gap: 2rem; align-items: center; }
 .nav-links a { font-weight: 500; font-size: 0.95rem; color: var(--text-main); }
 .nav-links a:hover, .nav-links a.active { color: var(--primary); }
 
