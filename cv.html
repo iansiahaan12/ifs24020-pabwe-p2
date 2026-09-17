@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Ian Kurniawan (NovaMind AI)</title>
+    <!-- Tailwind CSS 4 Play CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Kustomisasi Warna via Theme CSS Tailwind 4 -->
+    <style type="text/tailwindcss">
+        @theme {
+            --color-brand: #2563eb;
+            --color-brand-dark: #1e40af;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-slate-900 text-white p-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+            <span class="text-xl font-bold text-brand">NovaMind AI</span>
+            <div class="space-x-4 text-sm font-medium">
+                <a href="index.html" class="hover:text-brand transition">Beranda</a>
+                <a href="blog.html" class="hover:text-brand transition">Blog</a>
+                <a href="cv.html" class="text-brand">CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Kontainer Utama CV -->
+    <main class="max-w-5xl mx-auto my-10 px-4">
+        
+        <!-- Grid Layout Tailwind: 1 Kolom di Mobile, 3 Kolom di Desktop -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Kolom Kiri: Profil & Keahlian -->
+            <aside class="md:col-span-1 space-y-6">
+                
+                <!-- Profil Header -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
+                    <img src="formal1.png" alt="Foto Profil Ian" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-brand">
+                    <h1 class="text-2xl font-bold text-slate-900">Ian Kurniawan</h1>
+                    <p class="text-brand font-semibold text-sm mb-4">Front-End Developer & Aspiring AI Engineer</p>
+                    
+                    <div class="text-sm text-slate-600 space-y-2 text-left">
+                        <p>📍 Institut Teknologi Del</p>
+                        <p>📧 iansiahaan009@gmail.com</p>
+                        <p>📞 +62 852 6229 4440</p>
+                    </div>
+                </div>
+
+                <!-- Keahlian (Skills) -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <h2 class="text-lg font-bold border-b pb-2 mb-4">Technical Skills</h2>
+                    
+                    <h3 class="text-sm font-semibold mb-2">Programming</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">Java</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">JavaScript</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">Python</span>
+                    </div>
+
+                    <h3 class="text-sm font-semibold mb-2">Framework & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-brand text-white rounded-full text-xs font-medium">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">ReactJS</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">NextJS</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">Git / HTML / CSS</span>
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- Kolom Kanan: Pengalaman, Pendidikan, Portfolio -->
+            <section class="md:col-span-2 space-y-6">
+                
+                <!-- About -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">Tentang Saya</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Saya adalah mahasiswa semester 5 jurusan Informatika di Institut Teknologi Del. 
+                        Saya sangat tertarik untuk mendalami peran sebagai Front-End Web Developer dan penerapan 
+                        teknologi Artificial Intelligence dalam pengembangan UI/UX modern. Saya siap membangun 
+                        aplikasi yang interaktif, user-friendly, dan didukung kecerdasan buatan.
+                    </p>
+                </div>
+
+                <!-- Pendidikan & Pengalaman (Grid 2 Kolom di Desktop) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <h2 class="text-lg font-bold border-b pb-2 mb-4 text-brand">Pendidikan</h2>
+                        <div class="mb-3">
+                            <h3 class="font-semibold text-slate-800">Sarjana Informatika</h3>
+                            <p class="text-sm text-slate-500">Institut Teknologi Del (2024 - Sekarang)</p>
+                            <p class="text-sm font-medium mt-1">IPK: 3.38 / 4.00</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <h2 class="text-lg font-bold border-b pb-2 mb-4 text-brand">Pengalaman</h2>
+                        <ul class="space-y-3 text-sm text-slate-700">
+                            <li><span class="font-bold">Mentor Asrama</span> (2026 - 2027)</li>
+                            <li><span class="font-bold">Panitia PCA</span> - Divisi Olahraga (2025)</li>
+                            <li><span class="font-bold">MPM IT Del</span> - Komisi C (2025 - 2026)</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Proyek & Sertifikat -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <h2 class="text-xl font-bold text-slate-900 mb-4">Proyek & Pencapaian Terkait AI</h2>
+                    
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-brand pl-4">
+                            <h3 class="font-bold text-slate-800">Learning Basic Artificial Intelligence (AI)</h3>
+                            <p class="text-sm text-slate-500 mb-1">Dicoding Academy - 2025</p>
+                            <p class="text-sm text-slate-600">Sertifikasi dasar mengenai pemahaman konsep machine learning, neural networks, dan implementasi AI dasar.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-slate-300 pl-4">
+                            <h3 class="font-bold text-slate-800">PENA Competition - Bronze Medal</h3>
+                            <p class="text-sm text-slate-500 mb-1">Pekan Essay Nasional 2 - 2025</p>
+                            <p class="text-sm text-slate-600">Menerima Favorite Poster Award dan Medali Perunggu dalam Kategori Pendidikan mengenai Inovasi Pembelajaran Digital.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>

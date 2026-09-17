@@ -1,0 +1,172 @@
+/* ===== CSS Variables (Tema NovaMind AI) ===== */
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --dark-bg: #0f172a;
+  --light-bg: #f8fafc;
+  --text-main: #334155;
+  --text-light: #f8fafc;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-main);
+  background-color: var(--light-bg);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: linear-gradient(135deg, var(--dark-bg), var(--secondary-color));
+  color: var(--text-light);
+  text-align: center;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+/* ===== Section Layanan (CSS Grid) ===== */
+.layanan {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.layanan h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.grid-layanan {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* ===== Section Tentang & Kontak ===== */
+.tentang, .kontak {
+  padding: 4rem 5%;
+  background-color: white;
+  text-align: center;
+}
+
+.kontak {
+  background-color: var(--light-bg);
+}
+
+.form-kontak {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto 0;
+}
+
+.form-kontak input, .form-kontak textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--dark-bg);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ===== Responsive (Media Queries) ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Simplifikasi untuk mobile */
+  }
+}
